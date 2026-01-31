@@ -1,8 +1,9 @@
 .proptech-non-protected-nav {
 	position: fixed;
 	width: 100%;
-	background: var(--color-white);
 	z-index: 20;
+	border: none;
+	border-bottom: 1px solid transparent;
 
 	& > .top {
 		background: var(--color-primary);
@@ -35,7 +36,8 @@
 	& > .main {
 		display: flex;
 		padding: 15px 0;
-		border-bottom: 1px solid var(--border-light);
+		background: #fff;
+		border-bottom: 1px solid #f4f4f5;
 	}
 
 	& > .main > ul {
