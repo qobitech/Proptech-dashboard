@@ -1,5 +1,5 @@
 import { StatsArrowIcon } from '@/assets/svg/StatsArrowIcon';
-import { ChartIcon, ChevronIcon, HomeIcon } from 'Assets';
+import { ChartIcon, ChatWidgetIcon, ChevronIcon, HomeIcon } from 'Assets';
 import MetricItemImg1 from '../../../assets/images/home/metric-item-1.webp';
 import MetricItemImg2 from '../../../assets/images/home/metric-item-2.webp';
 import MetricItemImg3 from '../../../assets/images/home/metric-item-3.webp';
@@ -136,6 +136,7 @@ const Landing = () => {
 				</div>
 			</div>
 			<div className='gallery'>
+				<ChatWidgetIcon className='chat-widget' />
 				<div className='item'>
 					<img
 						src={MetricItemImg1}

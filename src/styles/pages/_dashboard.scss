@@ -272,6 +272,14 @@
 		padding-bottom: 60px;
 	}
 
+	& > .gallery > .chat-widget {
+		right: 80px;
+		bottom: 85px;
+		z-index: 20;
+		position: fixed;
+		cursor: pointer;
+	}
+
 	& > .gallery > .item {
 		width: 100%;
 		height: 286px;
