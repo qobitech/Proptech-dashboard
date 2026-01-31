@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+		"baseUrl": ".",
+    "paths": {
+      "root": ["./"],
+      "Helpers": ["./src/helpers"],
+      "Assets": ["./src/assets"],
+      "Components": ["./src/components"],
+      "@/*": ["./src/*"]
+    },
+   "types": [
+			"react",
+			"react-dom",
+			"vite/client",
+			"vitest/globals",
+			"@testing-library/jest-dom",
+			"eslint-plugin-jsx-a11y",
+			"node"
+		],
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strictNullChecks": true,
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+
+    /* Linting */
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": [
+		"./src",
+		"./src/**/*.ts",
+		"./src/**/*.tsx",
+		"./src/**/*.js",
+		"./src/**/*.jsx",
+		"./src/**/*.cjs",
+		"./src/**/*.mjs",
+		"./src/**/*.json",
+		"eslint.config.js",
+		"vitest.setup.ts"
+	]
+}

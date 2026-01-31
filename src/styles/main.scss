@@ -1,0 +1,78 @@
+@font-face {
+	font-family: EuclidCircularBold;
+	src: url('../assets/fonts/Euclid\ Circular\ B\ Bold.ttf');
+	font-display: swap;
+}
+@font-face {
+	font-family: EuclidCircularBoldItalic;
+	src: url('../assets/fonts/Euclid\ Circular\ B\ Bold\ Italic.ttf');
+	font-display: swap;
+}
+@font-face {
+	font-family: EuclidCircularItalic;
+	src: url('../assets/fonts/Euclid\ Circular\ B\ Italic.ttf');
+	font-display: swap;
+}
+@font-face {
+	font-family: EuclidCircularLight;
+	src: url('../assets/fonts/Euclid\ Circular\ B\ Light.ttf');
+	font-display: swap;
+}
+@font-face {
+	font-family: EuclidCircularLightItalic;
+	src: url('../assets/fonts/Euclid\ Circular\ B\ Light\ Italic.ttf');
+	font-display: swap;
+}
+@font-face {
+	font-family: EuclidCircularMedium;
+	src: url('../assets/fonts/Euclid\ Circular\ B\ Medium.ttf');
+	font-display: swap;
+}
+@font-face {
+	font-family: EuclidCircularMediumItalic;
+	src: url('../assets/fonts/Euclid\ Circular\ B\ Medium\ Italic.ttf');
+	font-display: swap;
+}
+@font-face {
+	font-family: EuclidCircularRegular;
+	src: url('../assets/fonts/Euclid\ Circular\ B\ Regular.ttf');
+	font-display: swap;
+}
+@font-face {
+	font-family: EuclidCircularSemiBold;
+	src: url('../assets/fonts/Euclid\ Circular\ B\ SemiBold.ttf');
+	font-display: swap;
+}
+@font-face {
+	font-family: EuclidCircularSemiBoldItalic;
+	src: url('../assets/fonts/Euclid\ Circular\ B\ SemiBold\ Italic.ttf');
+	font-display: swap;
+}
+
+// base
+@import 'base/base';
+
+// components
+@import 'components/errorStatus';
+
+:root {
+	--font-bold: EuclidCircularBold;
+	--font-bold-italic: EuclidCircularBoldItalic;
+	--font-italic: EuclidCircularItalic;
+	--font-light: EuclidCircularLight;
+	--font-light-italic: EuclidCircularLightItalic;
+	--font-medium: EuclidCircularMedium;
+	--font-medium-italic: EuclidCircularMediumItalic;
+	--font-regular: EuclidCircularRegular;
+	--font-semibold: EuclidCircularSemiBold;
+	--font-semibold-italic: EuclidCircularSemiBoldItalic;
+	// COLORS
+	--color-primary: #105b48;
+	--color-white: #ffffff;
+	--color-primary-300: #176d58;
+	--color-accent: #176d5826;
+	--color-black: #191919;
+	--mid-gray: #606060;
+	--border: #d6d6d6;
+	--deep-gray: #3d3d3d;
+}
