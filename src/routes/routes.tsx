@@ -1,5 +1,5 @@
-import { BaseLayout } from '@/layout/BaseLayout';
 import { ErrorBoundary } from 'Components';
+import { BaseLayout, NonProtectedLayout } from 'Layout';
 import { Navigate, Outlet, type RouteObject } from 'react-router';
 
 export const routes: RouteObject[] = [
@@ -14,8 +14,17 @@ export const routes: RouteObject[] = [
 		),
 		children: [
 			{
-				index: true,
-				lazy: () => import('../app/(non-protected)/landing'),
+				Component: () => (
+					<NonProtectedLayout>
+						<Outlet />
+					</NonProtectedLayout>
+				),
+				children: [
+					{
+						index: true,
+						lazy: () => import('../app/(non-protected)/landing'),
+					},
+				],
 			},
 
 			{

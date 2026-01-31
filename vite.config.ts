@@ -12,9 +12,10 @@ export default defineConfig(({ mode }) => {
 		resolve: {
 			alias: {
 				'root': path.resolve(__dirname, './'),
-				'Helpers': path.resolve(__dirname, './src/helpers'),
 				'Assets': path.resolve(__dirname, './src/assets'),
 				'Components': path.resolve(__dirname, './src/components'),
+				'Helpers': path.resolve(__dirname, './src/helpers'),
+				'Layout': path.resolve(__dirname, './src/layout'),
 				'@': path.resolve(__dirname, './src'),
 			},
 		},
