@@ -339,6 +339,9 @@
 
 		& > .overview > .sales > .bottom > .left > svg {
 			flex-shrink: 0;
+			width: 100%;
+			max-width: 355px;
+			height: auto;
 		}
 	}
 
