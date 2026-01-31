@@ -19,3 +19,8 @@ export interface INavProfile extends SVGComponentProps {
 export interface IAnimatedMobileMenuController extends SVGComponentProps {
 	open: boolean;
 }
+
+export type IBudgettingIconVariants = 'annual' | 'trend' | 'figures';
+export interface IBudgettingIcon extends SVGComponentProps {
+	variant?: IBudgettingIconVariants;
+}

@@ -20,3 +20,5 @@ export * from './SearchIcon';
 export * from './WalletIcon';
 export * from './ToolboxIcon';
 export * from './TaskIcon';
+export * from './BudgettingIcon';
+export { type IBudgettingIconVariants } from './helpers';

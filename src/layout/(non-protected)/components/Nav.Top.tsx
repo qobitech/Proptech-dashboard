@@ -33,12 +33,12 @@ const NavTop = () => {
 				<ul>
 					<li>
 						<Link to='/'>
-							<CalculatorIcon />
+							<CalculatorIcon onClick={() => handleOpenModal('budgetting')} />
 						</Link>
 					</li>
 					<li>
 						<Link to='/'>
-							<CalendarIcon onClick={() => handleOpenModal('budgetting')} />
+							<CalendarIcon />
 						</Link>
 					</li>
 					<li>

@@ -40,4 +40,18 @@
 		line-height: 100%;
 		color: #606060;
 	}
+
+	& > .body > button {
+		width: 100%;
+		height: 46px;
+		border-radius: 9999px;
+		background: var(--color-black);
+		color: var(--color-white);
+		font-family: var(--font-medium);
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 140%;
+		letter-spacing: 0.001em;
+		cursor: pointer;
+	}
 }
