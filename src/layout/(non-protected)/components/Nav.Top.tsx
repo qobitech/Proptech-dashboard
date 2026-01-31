@@ -8,11 +8,14 @@ import {
 	SearchIcon,
 	WalletIcon,
 } from 'Assets';
+import { useModalContext } from 'Hooks';
 import { useCallback, useState } from 'react';
 import { Link } from 'react-router';
 
 const NavTop = () => {
 	const [open, setOpen] = useState<boolean>(false);
+
+	const { handleOpenModal } = useModalContext();
 
 	const handleMenuToggle = useCallback(() => {
 		setOpen(!open);
@@ -35,7 +38,7 @@ const NavTop = () => {
 					</li>
 					<li>
 						<Link to='/'>
-							<CalendarIcon />
+							<CalendarIcon onClick={() => handleOpenModal('budgetting')} />
 						</Link>
 					</li>
 					<li>

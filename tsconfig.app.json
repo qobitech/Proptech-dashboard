@@ -11,8 +11,11 @@
 			"root": ["./"],
 			"Assets": ["./src/assets"],
 			"Components": ["./src/components"],
+			"Config": ["./src/config"],
 			"Helpers": ["./src/helpers"],
+			"Hooks": ["./src/hooks"],
 			"Layout": ["./src/layout"],
+			"Store": ["./src/store"],
 			"@/*": ["./src/*"]
 		},
 		"types": [

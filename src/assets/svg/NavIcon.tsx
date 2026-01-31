@@ -39,7 +39,7 @@ export const NavIcon = ({ variant = 'left', ...rest }: INavIcon) => {
 				r='9'
 				fill='#E4E4E4'
 			/>
-			<g clip-path='url(#clip0_26_11557)'>
+			<g clipPath='url(#clip0_26_11557)'>
 				<path
 					d='M11.25 9L7.875 12.375L7.875 5.625L11.25 9Z'
 					fill='#191919'

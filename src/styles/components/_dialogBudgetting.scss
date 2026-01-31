@@ -1,0 +1,43 @@
+.dialog-budgetting {
+	background: var(--color-white);
+	border-radius: 11.3px;
+	overflow: hidden;
+
+	& > .body {
+		padding: 24px 47px;
+	}
+
+	& > .body > .list {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		margin-bottom: 24px;
+	}
+
+	& > .body > .list > .item {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	& > .body > .list > .item > .left > svg {
+		flex-shrink: 0;
+	}
+
+	& > .body > .list > .item > .right > h4 {
+		font-family: var(--font-semibold);
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 100%;
+		color: var(--color-black);
+		margin-bottom: 4px;
+	}
+
+	& > .body > .list > .item > .right > p {
+		font-family: var(--font-regular);
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 100%;
+		color: #606060;
+	}
+}

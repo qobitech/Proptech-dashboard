@@ -6,19 +6,22 @@ import { RouterProvider } from 'react-router';
 import './styles/main.scss';
 import { BaseLayout } from './layout/BaseLayout.tsx';
 import router from './router.ts';
+import { Providers } from 'Store';
 
 createRoot(document.getElementById('root')!).render(
 	<HelmetProvider>
 		<StrictMode>
-			<Suspense
-				fallback={
-					<BaseLayout>
-						<p>Loading...</p>
-					</BaseLayout>
-				}
-			>
-				<RouterProvider router={router} />
-			</Suspense>
+			<Providers>
+				<Suspense
+					fallback={
+						<BaseLayout>
+							<p>Loading...</p>
+						</BaseLayout>
+					}
+				>
+					<RouterProvider router={router} />
+				</Suspense>
+			</Providers>
 		</StrictMode>
 	</HelmetProvider>
 );
