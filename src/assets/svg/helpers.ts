@@ -11,3 +11,7 @@ export interface IStatsArrow extends SVGComponentProps {
 export interface INavIcon extends SVGComponentProps {
 	variant?: 'left' | 'right';
 }
+
+export interface INavProfile extends SVGComponentProps {
+	text: string;
+}

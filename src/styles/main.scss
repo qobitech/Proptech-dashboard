@@ -52,8 +52,13 @@
 // base
 @import 'base/base';
 
+// pages
+@import 'pages/dashboard';
+
 // components
 @import 'components/errorStatus';
+@import 'components/nav';
+@import 'components/utilities';
 
 :root {
 	--font-bold: EuclidCircularBold;
@@ -68,11 +73,20 @@
 	--font-semibold-italic: EuclidCircularSemiBoldItalic;
 	// COLORS
 	--color-primary: #105b48;
+	--color-primary-light: rgba(23, 109, 88, 0.15);
+	--color-primary-light-hover: rgba(23, 109, 88, 0.08);
+	--color-primary-alpha: #176d5826;
+
 	--color-white: #ffffff;
-	--color-primary-300: #176d58;
-	--color-accent: #176d5826;
 	--color-black: #191919;
-	--mid-gray: #606060;
-	--border: #d6d6d6;
-	--deep-gray: #3d3d3d;
+
+	--color-gray-600: #3d3d3d;
+	--color-gray-500: #606060;
+	--color-gray-300: #d6d6d6;
+	--border-light: #f4f4f5;
+	--color-gray-200: #e4e4e4;
+
+	--color-primary-alpha: #176d58;
+	--color-gray-100: #f5f5f5;
+	--color-gray-200: #e4e4e4;
 }

@@ -5,7 +5,7 @@ const NonProtected = ({ children }: PropsWithChildren) => {
 	return (
 		<>
 			<Nav />
-			<div>{children}</div>
+			<>{children}</>
 		</>
 	);
 };
