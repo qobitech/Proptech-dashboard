@@ -180,8 +180,8 @@
 
 	& > .overview > .listings-group {
 		flex-basis: 32%;
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 		gap: 20px;
 	}
 
@@ -309,5 +309,55 @@
 		font-size: 18px;
 		line-height: 100%;
 		color: var(--color-white);
+	}
+
+	@media (max-width: 1300px) {
+		& > .overview {
+			flex-direction: column;
+		}
+
+		& > .overview > .sales,
+		& > .overview > .listings-group {
+			flex-basis: 100%;
+			width: 100%;
+		}
+
+		& > .overview > .listings-group {
+			grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+		}
+	}
+
+	@media (max-width: 912px) {
+		& > .overview > .sales > .bottom {
+			flex-direction: column;
+		}
+
+		& > .overview > .sales > .bottom > .left {
+			display: flex;
+			justify-content: center;
+		}
+
+		& > .overview > .sales > .bottom > .left > svg {
+			flex-shrink: 0;
+		}
+	}
+
+	@media (max-width: 768px) {
+		& > .overview > .sales > .top > .header {
+			flex-direction: column;
+			gap: 25px;
+		}
+
+		& > .overview > .sales > .top > .header > .left {
+			text-align: center;
+		}
+
+		& > .overview > .sales > .top > .occurence {
+			justify-content: center;
+		}
+
+		& > .overview > .listings-group {
+			grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+		}
 	}
 }
