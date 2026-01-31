@@ -15,6 +15,10 @@
 		width: 100%;
 	}
 
+	& > .top > .content > .top-menu-controller {
+		display: none;
+	}
+
 	& > .top > .content > ul {
 		display: flex;
 		align-items: center;
@@ -73,5 +77,28 @@
 		color: var(--color-primary-alpha);
 		font-family: var(--font-semibold);
 		font-weight: 600;
+	}
+
+	@media (max-width: 1200px) {
+		& > .top > .content > ul,
+		& > .main > ul {
+			display: none;
+		}
+
+		& > .top > .content > .top-menu-controller,
+		& > .main > .top-menu-controller {
+			display: flex;
+			cursor: pointer;
+		}
+
+		& > .main {
+			width: 95%;
+			margin: 0 auto;
+			justify-content: flex-end;
+		}
+
+		& > .main > .top-menu-controller path {
+			stroke: var(--color-primary);
+		}
 	}
 }

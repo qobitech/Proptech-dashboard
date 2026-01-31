@@ -15,3 +15,7 @@ export interface INavIcon extends SVGComponentProps {
 export interface INavProfile extends SVGComponentProps {
 	text: string;
 }
+
+export interface IAnimatedMobileMenuController extends SVGComponentProps {
+	open: boolean;
+}

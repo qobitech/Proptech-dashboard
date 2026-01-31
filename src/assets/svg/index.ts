@@ -1,3 +1,4 @@
+export * from './AnimatedMobileMenuController';
 export * from './ArticleIcon';
 export * from './ChevronIcon';
 export * from './ChatWidgetIcon';
